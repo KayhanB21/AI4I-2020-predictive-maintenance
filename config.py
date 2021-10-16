@@ -14,6 +14,7 @@ settings = Dynaconf(settings_files = ["config/default_settings.yml",  # a file f
                                       ],
                     environments = True,  # Enable layered environments
                     env_switcher = "ENV_APP",  # to switch environments
+                    fresh_vars = ["NOTEBOOK"],
                     )
 
 # settings.validators.register(Validator("NAME", must_exist = True, eq = "Bruno", env = "development"))

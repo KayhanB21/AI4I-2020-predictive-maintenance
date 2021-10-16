@@ -1,6 +1,6 @@
 DEFAULT:
-
-  TEST_VAR: ''
+  NOTEBOOK:
+    TEST_VAR: '2'
 
 
 
