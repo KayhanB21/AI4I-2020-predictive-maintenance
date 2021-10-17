@@ -1,6 +1,43 @@
 DEFAULT:
   NOTEBOOK:
     DATA_SOURCE_PATH: './data/ai4i2020.csv'
+    PLOT_KDE_FUNC:
+      MACHINE_FAILURE_0:
+        LINE_STYLE: '--'
+        LINE_WIDTH: 2
+        LINE_COLOR: blue
+      MACHINE_FAILURE_1:
+        LINE_STYLE: '-'
+        LINE_WIDTH: 2
+        LINE_COLOR: red
+    PLOT_KDE_MULTIPLE_FUNC:
+      MACHINE_FAILURE_0:
+        L:
+          LINE_STYLE: '--'
+          LINE_WIDTH: 1
+          LINE_COLOR: blue
+        M:
+          LINE_STYLE: '--'
+          LINE_WIDTH: 2.5
+          LINE_COLOR: blue
+        H:
+          LINE_STYLE: '--'
+          LINE_WIDTH: 4
+          LINE_COLOR: blue
+      MACHINE_FAILURE_1:
+        L:
+          LINE_STYLE: '-'
+          LINE_WIDTH: 1
+          LINE_COLOR: red
+        M:
+          LINE_STYLE: '-'
+          LINE_WIDTH: 2.5
+          LINE_COLOR: red
+        H:
+          LINE_STYLE: '-'
+          LINE_WIDTH: 4
+          LINE_COLOR: red
+
 
 
 
