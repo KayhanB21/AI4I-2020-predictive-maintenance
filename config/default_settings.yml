@@ -1,6 +1,6 @@
 DEFAULT:
   NOTEBOOK:
-    DATA_SOURCE_PATH: 'data/ai4i2020.csv'
+    DATA_SOURCE_PATH: './data/ai4i2020.csv'
 
 
 
