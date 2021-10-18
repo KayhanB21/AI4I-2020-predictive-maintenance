@@ -1,44 +1,56 @@
 DEFAULT:
   NOTEBOOK:
-    DATA_SOURCE_PATH: './data/ai4i2020.csv'
-    PLOT_KDE_FUNC:
-      MACHINE_FAILURE_0:
-        LINE_STYLE: '--'
-        LINE_WIDTH: 2
-        LINE_COLOR: blue
-      MACHINE_FAILURE_1:
-        LINE_STYLE: '-'
-        LINE_WIDTH: 2
-        LINE_COLOR: red
-    PLOT_KDE_MULTIPLE_FUNC:
-      MACHINE_FAILURE_0:
-        L:
+    FEATURE_EVALUATION:
+
+      DATA_SOURCE_PATH: './data/ai4i2020.csv'
+
+      PLOT_KDE_FUNC:
+        ACTIVATED: true
+        MACHINE_FAILURE_0:
           LINE_STYLE: '--'
-          LINE_WIDTH: 1
+          LINE_WIDTH: 2
           LINE_COLOR: blue
-        M:
-          LINE_STYLE: '--'
-          LINE_WIDTH: 2.5
-          LINE_COLOR: blue
-        H:
-          LINE_STYLE: '--'
-          LINE_WIDTH: 4
-          LINE_COLOR: blue
-      MACHINE_FAILURE_1:
-        L:
+        MACHINE_FAILURE_1:
           LINE_STYLE: '-'
-          LINE_WIDTH: 1
-          LINE_COLOR: red
-        M:
-          LINE_STYLE: '-'
-          LINE_WIDTH: 2.5
-          LINE_COLOR: red
-        H:
-          LINE_STYLE: '-'
-          LINE_WIDTH: 4
+          LINE_WIDTH: 2
           LINE_COLOR: red
 
+      PLOT_KDE_MULTIPLE_FUNC:
+        ACTIVATED: true
+        MACHINE_FAILURE_0:
+          L:
+            LINE_STYLE: '--'
+            LINE_WIDTH: 1
+            LINE_COLOR: blue
+          M:
+            LINE_STYLE: '--'
+            LINE_WIDTH: 2.5
+            LINE_COLOR: blue
+          H:
+            LINE_STYLE: '--'
+            LINE_WIDTH: 4
+            LINE_COLOR: blue
+        MACHINE_FAILURE_1:
+          L:
+            LINE_STYLE: '-'
+            LINE_WIDTH: 1
+            LINE_COLOR: red
+          M:
+            LINE_STYLE: '-'
+            LINE_WIDTH: 2.5
+            LINE_COLOR: red
+          H:
+            LINE_STYLE: '-'
+            LINE_WIDTH: 4
+            LINE_COLOR: red
 
+      LOGISTIC_REGRESSION:
+        MAX_ITER: 500
+        TEST_SIZE: 0.15
+
+      XGBOOST:
+        MAX_DEPTH: 8
+        TEST_SIZE: 0.15
 
 
 # Source: https://stackoverflow.com/questions/19109912/yaml-do-i-need-quotes-for-strings-in-yaml

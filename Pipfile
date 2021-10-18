@@ -11,6 +11,10 @@ numpy = "*"
 pandas = "*"
 matplotlib = "*"
 seaborn = "*"
+scikit-learn = "*"
+pyarrow = "*"
+imbalanced-learn = "*"
+xgboost = "*"
 
 [dev-packages]
 
